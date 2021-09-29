@@ -1,0 +1,29 @@
+body {
+    background-color: #dcdcdc;
+    max-width: 900px;
+    margin: auto;
+}
+
+.imagem {
+    border-radius: 50%;
+    border: 2px solid gray;
+    display: block;
+    margin: auto;
+    margin-left: auto ;
+}
+
+#title {
+    color: darkred;
+    font-size: 34px;
+    text-align: center;
+}
+
+.post {
+    background-color: white;
+    margin: 5px;
+}
+
+.image {
+    border-radius: 1%;
+    width: 100&;
+}
