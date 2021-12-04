@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Mídias em HTML5</h1>
+    <h2>Imagem dinâmica</h2>
+    <p>Tente abrir esse site em varios dispositivos diferentes, ou aumente e diminua o navegador do seu computador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h2>Áudio</h2>
+    <p>A seguir, iremos reproduzir um áudio.</p>
+    <audio src="audio/happy-mistake.mp3" controls autoplay></audio>
+    <p>Podemos reproduzir um áudio de outra forma, vejamos abaixo:</p>
+    <audio preload="metadata" autoplay controls>
+        <source src="audio/guanacast-33.mp3" type="audio/mpeg">
+    </audio>
+    <p>Caso o seu navegador não consiga reproduzir o áudio. <a href="audio/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    <h2>Vídeos hospedados localmente</h2>
+    <p>Abaixo, iremos inserir um vídeo neste projeto.</p>
+    <video height="400" src="video/meu-video.webm" controls></video>
+    <p>Vamos inserir de uma outra forma, parece que está igual, mas no código podemos ver a diferença.</p>
+    <p>Na forma utilizada abaixo, eu insiro vários formatos do mesmo vídeo para conseguir compatibilidade com diversos navegadores.</p>
+    <video height="400" controls>
+        <source src="video/meu-video.m4v" type="video/m4v">
+        <source src="video/meu-video.webm" type="video/webm">
+        <source src="video/meu-video.mp4" type="video/mp4">
+    </video>
+    <h2>Vídeos externos</h2>
+    <p>Agora iremos inserir vídeos externos de uma maneira legal e barata, usando serviços de hospedagem de vídeos, o mais conhecido de todos é o <strong>Youtube</strong>.</p>
+    <iframe width="400" height="315" src="https://www.youtube.com/embed/eF9Qoc6p_4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h2>E aqui eu encerro mais um capítulo, obrigada Curso em Vídeo!</h2>
+</body>
+</html>

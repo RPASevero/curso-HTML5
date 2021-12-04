@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Citações e códigos</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código fonte / Pré-formatação</h2>
+    <p>O comando <mark>document.getElementById('teste')</mark> é escrito em linguagem Javascript.</p>
+    <p>O comando <mark><code>document.getElementById('teste)</code></mark> é escrito em linguagem Javascript.</p>
+    <p>Note a diferença na formatação entre o nome dos comandos marcados, no primeiro o comando está difícil de ler, mas no segundo, usamos a tag &lt;code&gt;, que torna o mesmo comando mais legível ao ser escrito.</p>
+    <p><strong>Abaixo, vejamos um exemplo com um código Phyton</strong></p>
+    <code>
+        num = int(input('Digite um número'))
+        if num % 2 == o:
+            print(f'O número {num} é PAR')
+        else:
+            print(f'O número {num} é ÍMPAR')
+        print('Fim di programa')
+    </code>
+    <p>O código acima, já está dentro da tag &lt;code&gt;, mas perdeu a sua indentação, para mantê-lo da forma que ele está dentro do editor de códigos, iremos envelopar toda a tag &lt;code&gt; dentro de uma tag &lt;pre&gt;.</p>
+    <pre>
+        <code>
+            num = int(input('Digite um número'))
+            if num % 2 == o:
+                print(f'O número {num} é PAR')
+            else:
+                print(f'O número {num} é ÍMPAR')
+            print('Fim di programa')
+        </code>
+    </pre>
+    <p>Caso você queira colocá-lo mais alinhado com o texto dos parágrafos, é só selecionar o código, pressionar shift + tab e arrastá-lo.</p>
+    <pre>
+        <code>
+    num = int(input('Digite um número'))
+    if num % 2 == o:
+        print(f'O número {num} é PAR')
+    else:
+        print(f'O número {num} é ÍMPAR')
+    print('Fim di programa')
+        </code>
+    </pre>
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de uma amigo: <q>o computador é um burro muito rápido</q>.</p>
+    <p>Para inserir aspas na citação, a mesma deve ser envelopada na tag &lt;q&gt;.</p>
+    <h2>Citações completas</h2>
+    <p>Segundo Jeff Noble, no seu livro HTML para leigos:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/HTML_XHTML_e_CSS_Para_Leigos/E8ZtDwAAQBAJ?hl=pt-BR&gbpv=1&dq=html+para+leigos&printsec=frontcover">
+        A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
+    </blockquote>
+    <p>A citação acima foi envelopada com a tag &lt;blockquote&gt; + cite, onde foi colocada a URL da onde o trecho foi retirado.</p>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+    <p>Para incluir a descrição da abreviação, envelopamos o termo abreviado usando a tag &lt;abbr&gt; e em seguida descrevemos o significado da abreviação em title.</p>
+</body>
+</html>
